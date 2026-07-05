@@ -1,0 +1,171 @@
+/* Padronizar o css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f9f9; 
+  color: #2b2b2b;  
+  line-height: 1.6;
+}
+
+.cabecalho {
+  background-color: #2a9d8f;
+  color: #ffffff;
+  padding: 15px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+.menu a:hover {
+  background-color: #e76f51;
+}
+
+.menu a.ativo {
+  background-color: #e76f51;
+}
+
+.conteudo {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.botao {
+  display: inline-block;
+  background-color: #e76f51;
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.botao:hover {
+  opacity: 0.9;
+}
+
+.conteudo h1 {
+  color: #2a9d8f;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.texto-topo {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+}
+
+.cards-contato {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.card-contato {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.card-contato .icone {
+  font-size: 40px;
+}
+
+.card-contato h3 {
+  color: #2a9d8f;
+  margin: 10px 0;
+}
+
+.bloco {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.bloco h2 {
+  color: #2a9d8f;
+  margin-bottom: 15px;
+}
+
+.horarios p,
+.redes p {
+  margin: 8px 0;
+}
+
+.formulario-contato {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  gap: 6px;
+}
+
+.formulario-contato label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.formulario-contato input,
+.formulario-contato textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulario-contato .botao {
+  margin-top: 20px;
+  width: fit-content;
+}
+
+.aviso {
+  margin-top: 15px;
+  color: #2a9d8f;
+  font-weight: bold;
+}
+
+.pergunta {
+  margin-bottom: 20px;
+}
+
+.pergunta h3 {
+  color: #2a9d8f;
+  margin-bottom: 5px;
+}
