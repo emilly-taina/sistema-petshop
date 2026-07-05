@@ -3,44 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel Administrativo</title>
+    <title>Entre Patas | Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/dashboard.css">
 </head>
 <body>
 
-    <header>
-        <h1>🐾 Pet Shop - Área Administrativa</h1>
-    </header>
+<header class="site-header">
 
-    <main>
+    <div class="brand">
 
-        <div class="card">
+        <div class="brand-mark">EP</div>
+
+        <span>Entre Patas</span>
+
+    </div>
+
+    <button id="btnSair">Sair</button>
+
+</header>
+
+<main>
+
+    <section class="titulo">
+
+        <h1>Painel Administrativo</h1>
+
+        <p>Gerencie os serviços do pet shop.</p>
+
+    </section>
+
+    <section class="cards">
+
+        <a href="agendamentos.html" class="card">
+
             <h2>📅 Agendamentos</h2>
-            <p>Gerencie os agendamentos dos clientes.</p>
-            <a href="agendamentos.html">Acessar</a>
-        </div>
 
-        <div class="card">
+            <p>Visualize e gerencie todos os agendamentos.</p>
+
+        </a>
+
+        <a href="pets.html" class="card">
+
             <h2>🐶 Pets</h2>
-            <p>Cadastre e gerencie os pets.</p>
-            <a href="pets.html">Acessar</a>
-        </div>
 
-        <div class="card">
+            <p>Cadastre e edite os pets.</p>
+
+        </a>
+
+        <a href="produtos.html" class="card">
+
             <h2>🛒 Produtos</h2>
+
             <p>Gerencie os produtos da loja.</p>
-            <a href="produtos.html">Acessar</a>
-        </div>
 
-        <div class="card">
+        </a>
+
+        <a href="servicos.html" class="card">
+
             <h2>🩺 Serviços</h2>
-            <p>Cadastre e altere os serviços.</p>
-            <a href="servicos.html">Acessar</a>
-        </div>
 
-    </main>
+            <p>Cadastre e altere os serviços.</p>
+
+        </a>
+
+    </section>
+
+</main>
+
+<script src="js/dashboard.js"></script>
 
 </body>
 </html>
-<script src="js/dashboard.js"></script>
