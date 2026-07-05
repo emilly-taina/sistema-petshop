@@ -3,111 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerenciar Agendamentos</title>
+    <title>Entre Patas | Agendamentos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/agendamentos.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>🐾 Pet Shop - Gerenciamento de Agendamentos</h1>
-    </header>
+<header class="site-header">
 
-    <main>
+    <div class="brand">
 
-        <section class="topo">
-            <h2>Lista de Agendamentos</h2>
+        <div class="brand-mark">EP</div>
 
-            <button id="btnNovo">
-                + Novo Agendamento
-            </button>
-        </section>
+        <span>Entre Patas</span>
 
-        <section class="formulario">
+    </div>
 
-            <h3>Novo Agendamento</h3>
+    <a class="voltar" href="dashboard.html">← Dashboard</a>
 
-            <form id="formAgendamento">
+</header>
 
-                <input
-                    type="text"
-                    id="tutor"
-                    placeholder="Nome do Tutor"
-                    required
-                >
+<main>
 
-                <input
-                    type="text"
-                    id="pet"
-                    placeholder="Nome do Pet"
-                    required
-                >
+<section class="titulo">
 
-                <select id="servico" required>
-                    <option value="">Selecione um serviço</option>
-                    <option>Banho</option>
-                    <option>Tosa</option>
-                    <option>Banho e Tosa</option>
-                    <option>Consulta</option>
-                    <option>Vacinação</option>
-                </select>
+<h1>Gerenciamento de Agendamentos</h1>
 
-                <input
-                    type="date"
-                    id="data"
-                    required
-                >
+<p>Cadastre e acompanhe os serviços agendados.</p>
 
-                <input
-                    type="time"
-                    id="hora"
-                    required
-                >
+</section>
 
-                <input
-                    type="tel"
-                    id="telefone"
-                    placeholder="Telefone"
-                    required
-                >
+<section class="card">
 
-                <button type="submit">
-                    Salvar Agendamento
-                </button>
+<form id="formAgendamento">
 
-            </form>
+<input type="text" id="tutor" placeholder="Nome do Tutor" required>
 
-        </section>
+<input type="text" id="pet" placeholder="Nome do Pet" required>
 
-        <section>
+<select id="servico" required>
 
-            <table>
+<option value="">Serviço</option>
 
-                <thead>
+<option>Banho</option>
 
-                    <tr>
-                        <th>Tutor</th>
-                        <th>Pet</th>
-                        <th>Serviço</th>
-                        <th>Data</th>
-                        <th>Horário</th>
-                        <th>Status</th>
-                        <th>Ações</th>
-                    </tr>
+<option>Tosa</option>
 
-                </thead>
+<option>Banho e Tosa</option>
 
-                <tbody id="tabelaAgendamentos">
+<option>Consulta</option>
 
-                </tbody>
+<option>Vacinação</option>
 
-            </table>
+</select>
 
-        </section>
+<input type="date" id="data" required>
 
-    </main>
+<input type="time" id="hora" required>
 
-    <script src="js/agendamentos.js"></script>
+<input type="tel" id="telefone" placeholder="Telefone" required>
+
+<button type="submit">
+
+Salvar Agendamento
+
+</button>
+
+</form>
+
+</section>
+
+<section class="card">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Tutor</th>
+
+<th>Pet</th>
+
+<th>Serviço</th>
+
+<th>Data</th>
+
+<th>Hora</th>
+
+<th>Status</th>
+
+<th>Ações</th>
+
+</tr>
+
+</thead>
+
+<tbody id="tabelaAgendamentos">
+
+</tbody>
+
+</table>
+
+</section>
+
+</main>
+
+<script src="js/agendamentos.js"></script>
 
 </body>
 </html>
