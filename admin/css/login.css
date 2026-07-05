@@ -1,78 +1,178 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root{
+
+    --azul-principal:#1f8c98;
+    --coral:#f47f6b;
+    --azul-claro:#d8f3f5;
+    --coral-claro:#ffe3dd;
+    --creme:#fff8f2;
+    --texto:#26343a;
+    --texto-suave:#65767d;
+    --branco:#ffffff;
+
+    --sombra:0 18px 45px rgba(31,140,152,.16);
+
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f7f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-.login-container {
-    background: white;
-    padding: 35px;
-    width: 350px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+body{
+
+    font-family:"Nunito",sans-serif;
+
+    background:var(--creme);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:100vh;
+
 }
 
-.login-container h1 {
-    text-align: center;
-    color: #2e8b57;
-    margin-bottom: 10px;
+.login-card{
+
+    width:420px;
+
+    background:var(--branco);
+
+    border-radius:20px;
+
+    padding:40px;
+
+    box-shadow:var(--sombra);
+
 }
 
-.login-container h2 {
-    text-align: center;
-    color: #555;
-    margin-bottom: 25px;
-    font-size: 20px;
+.logo{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
 }
 
-label {
-    display: block;
-    margin-bottom: 6px;
-    font-weight: bold;
+.logo-circle{
+
+    width:70px;
+
+    height:70px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:var(--coral-claro);
+
+    color:var(--coral);
+
+    font-family:"Fredoka";
+
+    font-size:24px;
+
+    font-weight:bold;
+
+    margin-bottom:15px;
+
 }
 
-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 18px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 15px;
+.logo h1{
+
+    font-family:"Fredoka";
+
+    color:var(--azul-principal);
+
 }
 
-input:focus {
-    outline: none;
-    border-color: #2e8b57;
+.logo p{
+
+    color:var(--texto-suave);
+
+    margin-top:8px;
+
 }
 
-button {
-    width: 100%;
-    padding: 12px;
-    background-color: #2e8b57;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
+label{
+
+    display:block;
+
+    margin-top:20px;
+
+    margin-bottom:8px;
+
+    font-weight:700;
+
 }
 
-button:hover {
-    background-color: #246b45;
+input{
+
+    width:100%;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    border:1px solid #ddd;
+
+    font-size:15px;
+
 }
 
-#mensagem {
-    margin-top: 15px;
-    text-align: center;
-    color: red;
-    font-weight: bold;
+input:focus{
+
+    outline:none;
+
+    border-color:var(--azul-principal);
+
+}
+
+button{
+
+    width:100%;
+
+    margin-top:30px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:var(--azul-principal);
+
+    color:white;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#17757f;
+
+}
+
+#mensagem{
+
+    text-align:center;
+
+    color:red;
+
+    margin-top:15px;
+
 }
