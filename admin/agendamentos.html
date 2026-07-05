@@ -1,1 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Agendamentos</title>
 
+    <link rel="stylesheet" href="css/agendamentos.css">
+</head>
+<body>
+
+    <header>
+        <h1>🐾 Pet Shop - Gerenciamento de Agendamentos</h1>
+    </header>
+
+    <main>
+
+        <section class="topo">
+            <h2>Lista de Agendamentos</h2>
+
+            <button id="btnNovo">
+                + Novo Agendamento
+            </button>
+        </section>
+
+        <section class="formulario">
+
+            <h3>Novo Agendamento</h3>
+
+            <form id="formAgendamento">
+
+                <input
+                    type="text"
+                    id="tutor"
+                    placeholder="Nome do Tutor"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="pet"
+                    placeholder="Nome do Pet"
+                    required
+                >
+
+                <select id="servico" required>
+                    <option value="">Selecione um serviço</option>
+                    <option>Banho</option>
+                    <option>Tosa</option>
+                    <option>Banho e Tosa</option>
+                    <option>Consulta</option>
+                    <option>Vacinação</option>
+                </select>
+
+                <input
+                    type="date"
+                    id="data"
+                    required
+                >
+
+                <input
+                    type="time"
+                    id="hora"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    id="telefone"
+                    placeholder="Telefone"
+                    required
+                >
+
+                <button type="submit">
+                    Salvar Agendamento
+                </button>
+
+            </form>
+
+        </section>
+
+        <section>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Tutor</th>
+                        <th>Pet</th>
+                        <th>Serviço</th>
+                        <th>Data</th>
+                        <th>Horário</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="tabelaAgendamentos">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <script src="js/agendamentos.js"></script>
+
+</body>
+</html>
