@@ -1,3 +1,14 @@
+:root{
+    --azul-principal:#1f8c98;
+    --coral:#f47f6b;
+    --coral-claro:#ffe3dd;
+    --creme:#fff8f2;
+    --texto:#26343a;
+    --texto-suave:#65767d;
+    --branco:#ffffff;
+    --sombra:0 18px 45px rgba(31,140,152,.16);
+}
+
 *{
     margin:0;
     padding:0;
@@ -5,52 +16,98 @@
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f4f7f9;
+    font-family:"Nunito",sans-serif;
+    background:var(--creme);
 }
 
-header{
-    background:#2e8b57;
+.site-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:var(--branco);
+    box-shadow:var(--sombra);
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-family:"Fredoka";
+    color:var(--azul-principal);
+    font-size:26px;
+}
+
+.brand-mark{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:var(--coral-claro);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:var(--coral);
+    font-weight:bold;
+}
+
+#btnSair{
+    background:var(--coral);
     color:white;
-    text-align:center;
-    padding:20px;
+    border:none;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+#btnSair:hover{
+    opacity:.9;
 }
 
 main{
     width:90%;
-    max-width:1100px;
+    max-width:1200px;
     margin:40px auto;
+}
 
+.titulo{
+    margin-bottom:35px;
+}
+
+.titulo h1{
+    font-family:"Fredoka";
+    color:var(--azul-principal);
+    font-size:38px;
+}
+
+.titulo p{
+    color:var(--texto-suave);
+}
+
+.cards{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-    gap:20px;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
 }
 
 .card{
     background:white;
-    padding:25px;
-    border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,.15);
+    padding:30px;
+    border-radius:18px;
+    box-shadow:var(--sombra);
+    transition:.3s;
+    text-decoration:none;
+}
+
+.card:hover{
+    transform:translateY(-6px);
 }
 
 .card h2{
-    color:#2e8b57;
+    font-family:"Fredoka";
+    color:var(--azul-principal);
     margin-bottom:15px;
 }
 
 .card p{
-    margin-bottom:20px;
-}
-
-.card a{
-    display:inline-block;
-    text-decoration:none;
-    background:#2e8b57;
-    color:white;
-    padding:10px 20px;
-    border-radius:5px;
-}
-
-.card a:hover{
-    background:#246b45;
+    color:var(--texto-suave);
 }
