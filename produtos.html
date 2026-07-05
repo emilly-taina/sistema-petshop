@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos | Entre Patas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/paginas-comuns.css">
+  <link rel="stylesheet" href="css/produtos.css">
+</head>
+<body>
+
+  <!-- ===== CABEÇALHO (alinhar com o header do index.html do Integrante 1) ===== -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">🐾 Entre Patas</a>
+      <nav class="main-nav">
+        <a href="index.html">Início</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="produtos.html" class="active">Produtos</a>
+        <a href="agendamento.html">Agendamento</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO DA PÁGINA ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Tudo para o dia a dia do seu pet</span>
+      <h1>Nossos produtos</h1>
+      <p>Rações, brinquedos, acessórios e itens de higiene selecionados com carinho para cães e gatos de todos os portes.</p>
+    </div>
+  </section>
+
+  <!-- ===== FILTROS ===== -->
+  <section class="filters-section">
+    <div class="container filter-tabs" id="filterTabs">
+      <button class="filter-btn active" data-filter="todos">Todos</button>
+      <button class="filter-btn" data-filter="racoes">Rações</button>
+      <button class="filter-btn" data-filter="brinquedos">Brinquedos</button>
+      <button class="filter-btn" data-filter="acessorios">Acessórios</button>
+      <button class="filter-btn" data-filter="higiene">Higiene</button>
+    </div>
+  </section>
+
+  <!-- ===== GRID DE PRODUTOS ===== -->
+  <section class="products-section">
+    <div class="container products-grid" id="productsGrid">
+
+      <article class="product-card" data-category="racoes">
+        <div class="product-thumb">🥣</div>
+        <span class="product-tag">Rações</span>
+        <h3>Ração Premium Cães Adultos</h3>
+        <p>Pacote 15kg, rica em proteínas e ômega 3 para pelagem saudável.</p>
+        <div class="product-footer">
+          <span class="price">R$ 189,90</span>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="racoes">
+        <div class="product-thumb">🐟</div>
+        <span class="product-tag">Rações</span>
+        <h3>Ração Gatos Castrados</h3>
+        <p>Fórmula com controle de peso e cuidado urinário, sabor salmão.</p>
+        <div class="product-footer">
+          <span class="price">R$ 129,90</span>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="brinquedos">
+        <div class="product-thumb">🎾</div>
+        <span class="product-tag">Brinquedos</span>
+        <h3>Bolinha Mordedora Resistente</h3>
+        <p>Borracha atóxica, ajuda na limpeza dos dentes durante a brincadeira.</p>
+        <div class="product-footer">
+          <span class="price">R$ 24,90</span>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="brinquedos">
+        <div class="product-thumb">🧶</div>
+        <span class="product-tag">Brinquedos</span>
+        <h3>Varinha com Pena para Gatos</h3>
+        <p>Estimula o instinto de caça e o gasto de energia dos felinos.</p>
+        <div class="product-footer">
+          <span class="price">R$ 19,90</span>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="acessorios">
+        <div class="product-thumb">🦮</div>
+        <span class="product-tag">Acessórios</span>
+        <h3>Guia + Coleira Ajustável</h3>
+        <p>Conjunto acolchoado, ajuste rápido, disponível em 4 tamanhos.</p>
+        <div class="product-footer">
+          <span class="price">R$ 69,90</span>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="acessorios">
+        <div class="product-thumb">🛏️</div>
+        <span class="product-tag">Acessórios</span>
+        <h3>Caminha Pet Redonda</h3>
+        <p>Tecido macio e antiderrapante, ideal para cães e gatos de pequeno porte.</p>
+        <div class="product-footer">
+          <span class="price">R$ 99,90</span>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="higiene">
+        <div class="product-thumb">🧴</div>
+        <span class="product-tag">Higiene</span>
+        <h3>Shampoo Neutro Hipoalergênico</h3>
+        <p>Fórmula suave para peles sensíveis, sem corantes ou parabenos.</p>
+        <div class="product-footer">
+          <span class="price">R$ 34,90</span>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="higiene">
+        <div class="product-thumb">🪥</div>
+        <span class="product-tag">Higiene</span>
+        <h3>Kit Higiene Bucal Pet</h3>
+        <p>Escova + pasta dental sabor frango, previne o tártaro e o mau hálito.</p>
+        <div class="product-footer">
+          <span class="price">R$ 44,90</span>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="empty-state" id="emptyState" hidden>Nenhum produto encontrado nessa categoria.</p>
+  </section>
+
+  <!-- ===== RODAPÉ (alinhar com o footer do index.html do Integrante 1) ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Entre Patas · Pet Shop. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/produtos.js"></script>
+</body>
+</html>
