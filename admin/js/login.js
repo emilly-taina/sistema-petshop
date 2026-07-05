@@ -1,21 +1,26 @@
 const formulario = document.getElementById("loginForm");
 
-formulario.addEventListener("submit", function(event) {
+formulario.addEventListener("submit", function(e){
 
-    event.preventDefault();
+    e.preventDefault();
 
-    const usuario = document.getElementById("usuario").value;
-    const senha = document.getElementById("senha").value;
+    const usuario=document.getElementById("usuario").value;
 
-    const mensagem = document.getElementById("mensagem");
+    const senha=document.getElementById("senha").value;
 
-    if (usuario === "admin" && senha === "1234") {
+    const mensagem=document.getElementById("mensagem");
 
-        window.location.href = "dashboard.html";
+    if(usuario==="admin" && senha==="1234"){
 
-    } else {
+        localStorage.setItem("logado","true");
 
-        mensagem.textContent = "Usuário ou senha inválidos.";
+        window.location.href="dashboard.html";
+
+    }
+
+    else{
+
+        mensagem.textContent="Usuário ou senha inválidos.";
 
     }
 
